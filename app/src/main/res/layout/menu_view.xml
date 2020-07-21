@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu_card"
+        android:layout_margin="5dp"
+        android:elevation="20dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardElevation="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="18dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/menu_img"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:id="@+id/title"
+
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ff3300"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/card_click"
+                android:layout_marginTop="99dp"
+                android:text="Menus"
+
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>
